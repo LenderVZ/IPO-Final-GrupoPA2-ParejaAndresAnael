@@ -1,9 +1,10 @@
 @import url(light.css);
 @import url(dark.css);
+@import url(fonts/Cabin.css);
 
 html {
     background-color: var(--md-sys-color-background);
-    font-family: sans-serif;
+    font-family: "Cabin", sans-serif;
 }
 
 body {
