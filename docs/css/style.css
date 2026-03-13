@@ -2,12 +2,17 @@
 @import url(dark.css);
 @import url(fonts/Cabin.css);
 
+* {
+    --btn-border-radius: 5rem;
+}
+
 html {
     background-color: var(--md-sys-color-background);
     font-family: "Cabin", sans-serif;
 }
 
 body {
+    color: var(--md-sys-color-on-surface);
     margin: 0;
 }
 
@@ -37,6 +42,7 @@ footer {
     height: 4rem;
     margin-top: 1rem;
     padding: 0.5rem;
+    padding-bottom: 5rem;
 }
 
 nav a {
@@ -44,11 +50,19 @@ nav a {
     border-style: solid;
     border-color: var(--md-sys-color-inverse-primary);
     border-width: 0.2rem;
-    border-radius: 5rem;
+    border-radius: var(--btn-border-radius);
     color: var(--md-sys-color-on-surface);
     text-decoration-line: none;
     padding: 0.75rem;
     margin: 0.25rem;
+}
+
+.action-btn {
+    background-color: var(--md-sys-color-secondary);
+    border-radius: var(--btn-border-radius);
+    color: var(--md-sys-color-on-secondary);
+    padding: 0.5rem;
+    text-decoration: none;
 }
 
 .card {
@@ -56,12 +70,25 @@ nav a {
     border-radius: 0.5em;
     color: var(--md-sys-color-on-surface);
     padding: 0.5rem;
+    box-shadow: 0.05rem 0.05rem 0.1rem var(--md-sys-color-shadow);
+}
+
+.card-centered {
+    text-align: center;
 }
 
 .card-view {
     display: flex;
     flex-flow: column;
     gap: 1rem;
+}
+
+.card-view-horizontal {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
 }
 
 .content {
@@ -83,12 +110,12 @@ a:link {
     color: var(--md-sys-color-secondary)
 }
 
-.card h2 {
-    margin: 0;
+a.action-btn {
+    color: var(--md-sys-color-on-secondary);
 }
 
-nav a:link {
-    color: var(--md-sys-color-on-surface);
+.card h2 {
+    margin: 0;
 }
 
 nav a:hover {
@@ -104,6 +131,16 @@ nav a:active {
 .card ul li {
    padding-top: 0.5rem;
    padding-bottom: 0.5rem;
+}
+
+.card-view-horizontal .card {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.card-view-horizontal h3:first-of-type {
+    margin-bottom: 0;
+    width: 100%;
 }
 
 .card p:first-of-type {

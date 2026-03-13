@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="115.84557mm"
+   height="83.942123mm"
+   viewBox="0 0 115.84557 83.942123"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="logo_alt.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="false"
+     inkscape:zoom="0.66199302"
+     inkscape:cx="173.71784"
+     inkscape:cy="203.17435"
+     inkscape:window-width="1707"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-50.535032,-88.81037)">
+    <g
+       id="g3">
+      <path
+         style="fill:#800080;stroke-width:1"
+         d="M 63.048064,95.030093 C 52.341789,135.07949 68.863819,149.75105 88.82243,148.56147 l 29.65955,-1.38785 C 81.499328,128.73503 62.228309,126.42195 63.048064,95.030093 Z"
+         id="path1"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="fill:#008080;stroke-width:1"
+         d="m 105.83303,120.10881 c -63.956686,40.0494 -63.907913,53.76276 -42.367615,52.57318 l 31.504864,-1.38785 C 82.503905,152.85555 63.274085,151.50067 105.83303,120.10881 Z"
+         id="path1-7"
+         sodipodi:nodetypes="cccc" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:52.9167px;line-height:1.2;font-family:Lexend;-inkscape-font-specification:'Lexend Bold';text-align:center;letter-spacing:-5.29167px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#61bd4f;stroke-width:1"
+         x="72.168221"
+         y="76.530045"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-size:52.9167px;stroke-width:1"
+           x="72.168221"
+           y="76.530045" /></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:52.9167px;line-height:1.2;font-family:Lexend;-inkscape-font-specification:'Lexend Bold';text-align:center;letter-spacing:-5.29167px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#800080;stroke-width:1"
+         x="119.93377"
+         y="127.96873"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="stroke-width:1;fill:#800080"
+           x="117.28793"
+           y="127.96873">leep</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:52.9167px;line-height:1.2;font-family:Lexend;-inkscape-font-specification:'Lexend Bold';text-align:center;letter-spacing:-5.29167px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#61bd4f;stroke-width:1"
+         x="128.98952"
+         y="171.29414"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="tspan3"
+           style="font-size:52.9167px;letter-spacing:-5.29167px;fill:#008080;stroke-width:1"
+           x="126.34368"
+           y="171.29414"
+           rotate="354.5 354.5 354.5 0">are</tspan></text>
+    </g>
+  </g>
+</svg>
