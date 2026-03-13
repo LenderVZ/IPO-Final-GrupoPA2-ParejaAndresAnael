@@ -1,13 +1,8 @@
-* {
-    --primary-colour: #dd0;
-    --primary-highlight-colour: #ee1;
-    --secondary-bg-colour: #240952;
-    --secondary-fg-colour: #fff;
-    --secondary-highlight-colour: #442972;
-    --control-colour: #eee;
-}
+@import url(light.css);
+@import url(dark.css);
 
 html {
+    background-color: var(--md-sys-color-background);
     font-family: sans-serif;
 }
 
@@ -21,8 +16,8 @@ nav {
 }
 
 header {
-    background-color: var(--secondary-bg-colour);
-    color: var(--secondary-fg-colour);
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +25,8 @@ header {
 }
 
 footer {
-    background-color: #ccc;
+    background-color: var(--md-sys-color-surface-container-lowest);
+    color: var(--md-sys-color-on-surface);
     height: 4rem;
     margin-top: 1rem;
     padding: 0.5rem;
@@ -43,8 +39,9 @@ nav a {
 }
 
 .card {
-    background-color: var(--control-colour);
+    background-color: var(--md-sys-color-surface-container);
     border-radius: 0.5em;
+    color: var(--md-sys-color-on-surface);
     padding: 0.5rem;
 }
 
