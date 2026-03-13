@@ -11,7 +11,12 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration-thickness: 0.05rem;
+}
+
 nav {
+    color: var(--md-sys-color-on-primary);
     display: flex;
     gap: 1rem;
 }
@@ -28,18 +33,22 @@ header {
 footer {
     background-color: var(--md-sys-color-surface-container-lowest);
     color: var(--md-sys-color-on-surface);
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    text-align: center;
     height: 4rem;
     margin-top: 1rem;
     padding: 0.5rem;
 }
 
 nav a {
-    color: var(--secondary-fg-colour);
+    background-color: var(--md-sys-color-surface);
+    border-style: solid;
+    border-color: var(--md-sys-color-inverse-primary);
+    border-width: 0.1rem;
+    border-radius: 5rem;
+    color: var(--md-sys-color-on-surface);
     text-decoration-line: none;
-    padding: 1rem;
+    padding: 0.75rem;
+    margin: 0.25rem;
 }
 
 .card {
@@ -59,14 +68,44 @@ nav a {
     padding: 0.5rem;
 }
 
+.link-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.section-sub {
+    color: var(--md-sys-color-on-surface-variant);
+    font-size: small;
+}
+
+a:link {
+    color: var(--md-sys-color-secondary)
+}
+
 .card h2 {
     margin: 0;
 }
 
-.card p:first-of-type {
-    margin-top: 0.2rem;
+nav a:link {
+    color: var(--md-sys-color-on-surface);
 }
 
 nav a:hover {
-    background-color: var(--secondary-highlight-colour);
+    background-color: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+nav a:active {
+    background-color: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
+}
+
+.card ul li {
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+
+.card p:first-of-type {
+    margin-top: 0.2rem;
 }
