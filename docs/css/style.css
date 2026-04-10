@@ -70,7 +70,7 @@ nav a {
     border-radius: 0.5em;
     color: var(--md-sys-color-on-surface);
     padding: 0.5rem;
-    box-shadow: 0.05rem 0.05rem 0.1rem var(--md-sys-color-shadow);
+    box-shadow: 0rem 0rem 0.4rem var(--md-sys-color-shadow);
 }
 
 .card-centered {
@@ -101,6 +101,17 @@ nav a {
     display: flex;
     gap: 1rem;
     justify-content: center;
+}
+
+.logo-container {
+    content: url(../img/logo_alt_2.svg);
+    max-height: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo-container {
+        content: url(../img/logo_alt_3.svg);
+    }
 }
 
 .section-sub {
