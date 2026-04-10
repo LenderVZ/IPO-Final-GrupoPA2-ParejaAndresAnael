@@ -124,6 +124,10 @@ a.action-btn {
     padding: 0.5rem;
 }
 
+.numeric-unit-value span {
+    font-size: 2rem;
+}
+
 nav a:hover {
     background-color: var(--md-sys-color-surface-variant);
     color: var(--md-sys-color-on-surface-variant);
