@@ -92,7 +92,9 @@ nav a {
 }
 
 .content {
-    padding: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .link-group {
@@ -116,6 +118,10 @@ a.action-btn {
 
 .card h2 {
     margin: 0;
+}
+
+.content section {
+    padding: 0.5rem;
 }
 
 nav a:hover {
