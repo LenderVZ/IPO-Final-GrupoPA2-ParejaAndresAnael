@@ -30,6 +30,13 @@ form {
     padding: 1rem;
 }
 
+hr {
+    width: 70%;
+    border: none;
+    height: 1px;
+    background-color: var(--md-sys-color-outline-variant);
+}
+
 header {
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-on-surface);
@@ -93,11 +100,11 @@ form input {
     background: none;
     color: var(--md-sys-color-on-surface);
     border: none;
-
-    font-size:medium;
+    font-size: medium;
 }
 
 .action-btn {
+    display: flex; gap: 0.5rem; align-items: center;
     background-color: var(--md-sys-color-secondary);
     border-radius: var(--btn-border-radius);
     color: var(--md-sys-color-on-secondary);
@@ -162,7 +169,13 @@ form input {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 0,5rem;
+    margin-bottom: 0, 5rem;
+}
+
+.logo.big {
+    max-height: 225px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .profile.start {
@@ -176,6 +189,11 @@ form input {
 .section-sub {
     color: var(--md-sys-color-on-surface-variant);
     font-size: small;
+}
+
+hr.extra {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 a:link {
@@ -201,11 +219,21 @@ a.action-btn {
     border-radius: 60%;
 }
 
-.content section .card, .content section .section {
+.action-text.square {
+    border-radius: 12px;
+}
+
+.content.center {
+    text-align: center;
+}
+
+.content section .card,
+.content section .section {
     margin: 0.5rem;
 }
 
-.profile h2, .profile p {
+.profile h2,
+.profile p {
     margin: 0;
 }
 
@@ -241,8 +269,8 @@ nav a:active {
 }
 
 .card ul li {
-   padding-top: 0.5rem;
-   padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .card-view-horizontal .card {
@@ -282,6 +310,7 @@ nav a:active {
 .card-header h2 {
     margin: 0;
 }
+
 .card-header p {
     margin-top: 0.2rem;
 }
@@ -334,15 +363,17 @@ nav a:active {
     visibility: hidden;
 }
 
-.navigation-title, .navigation-actions {
+.navigation-title,
+.navigation-actions {
     display: flex;
     flex-flow: row;
     align-items: center;
-    gap: 1rem;
 }
 
-.navigation-title span, .navigation-actions span {
-    padding: 1rem;
+.navigation-title span,
+.navigation-actions span {
+    padding: 0.5rem;
+    margin: 0.5rem;
     color: var(--md-sys-color-on-surface);
     border-radius: 100%;
 }
@@ -351,10 +382,14 @@ nav a:active {
     margin: 0;
 }
 
-.navigation-title span:hover, .navigation-actions span:hover, .action-text:hover {
+.navigation-title span:hover,
+.navigation-actions span:hover,
+.action-text:hover {
     background-color: var(--md-sys-color-surface-variant);
 }
 
-.navigation-title span:active, .navigation-actions span:active, .action-text:active {
+.navigation-title span:active,
+.navigation-actions span:active,
+.action-text:active {
     background-color: var(--md-sys-color-surface);
 }
