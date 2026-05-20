@@ -447,3 +447,18 @@ input:checked+.slider::before {
     display: flex;
     justify-content: space-between;
 }
+
+.list-section {
+    padding: 1rem;
+}
+
+.list-section label {
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.list-section input {
+    width: 75%;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
