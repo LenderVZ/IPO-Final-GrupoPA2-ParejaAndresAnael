@@ -172,6 +172,20 @@ form input {
     align-items: center;
 }
 
+.fpa {
+    position: fixed;
+    z-index: 1;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--md-sys-color-on-primary);
+    padding: 1rem;
+    text-decoration: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 12px;
+}
+
 .link-group {
     display: flex;
     gap: 1rem;
@@ -197,6 +211,11 @@ form input {
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 0, 5rem;
+}
+
+.space-end {
+    margin-bottom: 4rem;
+    content: "";
 }
 
 .logo.big {
@@ -298,12 +317,12 @@ a.action-btn {
     font-size: 2rem;
 }
 
-nav a:hover {
+nav a:hover, .fpa:hover {
     background-color: var(--md-sys-color-surface-variant);
     color: var(--md-sys-color-on-surface-variant);
 }
 
-nav a:active {
+nav a:active, .fpa:active {
     background-color: var(--md-sys-color-tertiary);
     color: var(--md-sys-color-on-tertiary);
 }
