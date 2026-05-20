@@ -28,9 +28,27 @@
                         <p class="section-sub">Histórico semanal</p>
                     </div>
                     <div class="navigation-actions">
-                        <a href="javascript:void()"><span class="material-symbols-outlined">today</span></a>
+                        <a id="btn_cal" href="javascript:void()"><span class="material-symbols-outlined">today</span></a>
                     </div>
                 </div>
+                <select class="gone" size="5" name="days" id="slc_days">
+                    <option value="4">4 mayo - 10 mayo</option>
+                    <option value="27">27 abril - 3 mayo</option>
+                    <option value="20">20 abril - 26 abril</option>
+                    <option value="13">13 abril - 19 abril</option>
+                    <option value="6">6 abril - 12 abril</option>
+                </select>
+                <script>
+                    let selector = document.getElementById("slc_days");
+                    let button = document.getElementById("btn_cal");
+
+                    function toggleCal() {
+                        selector.classList.toggle("gone");
+                        selector.onclick();
+                    }
+
+                    button.addEventListener('click', toggleCal, false);
+                </script>
                 <div class="plot">
                     <div style="height: 3.9rem;"></div>
                     <div style="height: 6.5rem;"></div>
