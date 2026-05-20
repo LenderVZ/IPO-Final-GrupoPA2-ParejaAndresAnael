@@ -113,14 +113,8 @@ nav a {
 }
 
 .logo {
-    content: url(../img/logo_alt_2.svg);
+    content: url(../img/logo.svg);
     max-height: 50px;
-}
-
-@media (prefers-color-scheme: dark) {
-    .logo {
-        content: url(../img/logo.svg);
-    }
 }
 
 .section-sub {
@@ -183,6 +177,7 @@ nav a:active {
     justify-content: space-between;
     align-items: baseline;
     margin: -0.5rem;
+    margin-top: 0.5rem;
 }
 
 .plot * {
@@ -201,6 +196,20 @@ nav a:active {
 }
 .card-header p {
     margin-top: 0.2rem;
+}
+
+.card .card-inner-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-inner-header * {
+    margin: 0;
+}
+
+.card-inner-header span {
+    font-size: 2.25rem;
 }
 
 .card-outline {
