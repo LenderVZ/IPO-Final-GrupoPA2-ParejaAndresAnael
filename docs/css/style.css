@@ -103,8 +103,35 @@ form input {
     font-size: medium;
 }
 
+.toggle {
+    display: inline-block;
+    position: relative;
+    width: 52px;
+    height: 32px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 34px;
+    background-color: var(--md-sys-color-surface-container-high);
+    transition: .2s;
+}
+
 .action-btn {
-    display: flex; gap: 0.5rem; align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
     background-color: var(--md-sys-color-secondary);
     border-radius: var(--btn-border-radius);
     color: var(--md-sys-color-on-secondary);
@@ -174,6 +201,7 @@ form input {
 
 .logo.big {
     max-height: 225px;
+    max-width: 90%;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
@@ -254,6 +282,18 @@ a.action-btn {
     content: "";
 }
 
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: var(--md-sys-color-outline);
+    transition: .2s;
+}
+
 .numeric-unit-value span {
     font-size: 2rem;
 }
@@ -285,6 +325,15 @@ nav a:active {
 
 .card p:first-of-type {
     margin-top: 0.2rem;
+}
+
+input:checked+.slider {
+    background-color: var(--md-sys-color-primary);
+}
+
+input:checked+.slider::before {
+    transform: translateX(20px);
+    background-color: var(--md-sys-color-on-primary);
 }
 
 .plot {
@@ -392,4 +441,9 @@ nav a:active {
 .navigation-actions span:active,
 .action-text:active {
     background-color: var(--md-sys-color-surface);
+}
+
+.menu-list a:has(.toggle) {
+    display: flex;
+    justify-content: space-between;
 }
