@@ -27,8 +27,8 @@ nav {
 }
 
 header {
-    background-color: var(--md-sys-color-primary);
-    color: var(--md-sys-color-on-primary);
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,11 +66,12 @@ nav a {
 }
 
 .card {
+    border: solid 0.1rem var(--md-sys-color-outline-variant);
     background-color: var(--md-sys-color-surface-container);
-    border-radius: 0.5em;
+    border-radius: 12px;
     color: var(--md-sys-color-on-surface);
     padding: 0.5rem;
-    box-shadow: 0rem 0rem 0.4rem var(--md-sys-color-shadow);
+    /*box-shadow: 0rem 0rem 0.4rem var(--md-sys-color-shadow);*/
 }
 
 .card-centered {
@@ -110,7 +111,7 @@ nav a {
 
 @media (prefers-color-scheme: dark) {
     .logo-container {
-        content: url(../img/logo_alt_3.svg);
+        content: url(../img/logo.svg);
     }
 }
 
@@ -166,4 +167,55 @@ nav a:active {
 
 .card p:first-of-type {
     margin-top: 0.2rem;
+}
+
+.plot {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: -0.5rem;
+}
+
+.plot * {
+    width: 2rem;
+    background-color: var(--md-sys-color-primary);
+}
+
+.card-header {
+    padding: 0.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+.card-header p {
+    margin-top: 0.2rem;
+}
+
+.card-outline {
+    border-radius: 12px;
+    border: solid 0.1rem var(--md-sys-color-outline-variant);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.menu-list {
+    display: flex;
+    flex-flow: column;
+}
+
+.menu-list a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.menu-list a:hover {
+    background-color: var(--md-sys-color-surface-container);
+}
+
+.hidden {
+    visibility: hidden;
 }

@@ -9,20 +9,27 @@
 
 <body>
     <header>
+        <i aria-hidden="true"></i>
         <div>
             <img class="logo-container" alt="Logo de SleepCare" />
         </div>
         <nav>
-            <a href=".">Inicio</a>
+            <a href="account.html"><i></i></a>
         </nav>
     </header>
     <div class="content">
         <section class="card-view">
             <div class="card">
                 <h2>Horas de sueño</h2>
-                <p class="section-sub">Haz un seguimiento de las horas que has dormido.</p>
+                <p class="section-sub">Histórico semanal</p>
                 <div class="plot">
-                    <!-- Insertar gráfico por días -->
+                    <div style="height: 3.9rem;"></div>
+                    <div style="height: 6.5rem;"></div>
+                    <div style="height: 5.5rem;"></div>
+                    <div style="height: 5.5rem;"></div>
+                    <div style="height: 3.8rem;"></div>
+                    <div style="height: 4.4rem;"></div>
+                    <div style="height: 6.5rem; visibility: hidden;"></div>
                 </div>
             </div>
             <div class="card">
@@ -30,57 +37,46 @@
                 <p></p>
                 <div class="card-view-horizontal card-centered">
                     <!-- Resumen numérico -->
-                     <div>
-                        <p class="section-sub">Fases del sueño</p>
-                        <p></p>
-                     </div>
-                     <div>
+                    <div>
                         <p class="section-sub">Frecuencia cardíaca</p>
-                        <p class="numeric-unit-value"><span>70 </span>PPM</p>
-                     </div>
-                     <div>
+                        <p class="numeric-unit-value"><span>70</span><br />PPM</p>
+                    </div>
+                    <div>
+                        <p class="section-sub">Fases del sueño</p>
+                        <p class="numeric-unit-value"><span>2</span><br />ciclos REM</p>
+                    </div>
+                    <div>
                         <p class="section-sub">Saturación de oxígeno</p>
-                        <p class="numeric-unit-value"><span>96,2 </span>%</p>
-                     </div>
+                        <p class="numeric-unit-value"><span>96,2</span><br />%</p>
+                    </div>
                 </div>
                 <!-- Insertar gráficos -->
             </div>
-            <div class="card">
-                <h2>Consejos</h2>
-                <p class="section-sub">Algunos consejos para que tu experiencia de descanso sea óptima.</p>
-                <ul>
-                    <li>Intenta reducir la exposición a pantallas antes de acostarte.</li>
-                    <li>Escoge un ambiente más tranquilo durante las noches.</li>
-                </ul>
+
+            <div>
+                <div class="card-header">
+                    <h2>Consejos</h2>
+                    <p class="section-sub">Algunos consejos para que tu experiencia de descanso sea óptima.</p>
+                </div>
+                <div class="card-outline">
+                    <ul>
+                        <li>Intenta reducir el tiempo de uso de pantallas antes de dormir.</li>
+                        <li>Escoge un ambiente más tranquilo para pasar la noche.</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <section class="card-view-horizontal">
-            <h3>Ajustes rápidos</h3>
-            <div class="card card-centered">
-                <h2>Intensidad</h2>
-                <p><br /></p>
-                <a class="action-btn" href="#">Más opciones</a>
-            </div>
-            <div class="card card-centered">
-                <h2>Emisión de sonido</h2>
-                <p><br /></p>
-                <a class="action-btn" href="#">Más opciones</a>
-            </div>
-            <div class="card card-centered">
-                <h2>Control del aire</h2>
-                <p><br /></p>
-                <a class="action-btn" href="#">Más opciones</a>
+            <div>
+                <div class="card-header">
+                    <h3>Ajustes rápidos</h3>
+                </div>
+                <div class="menu-list">
+                    <a href="intensidad.html"><i aria-hidden="true"></i>Intensidad</a>
+                    <a href="sonido.html"><i aria-hidden="true"></i>Emisión de sonido</a>
+                    <a href="aire.html"><i aria-hidden="true"></i>Control del aire</a>
+                </div>
             </div>
         </section>
     </div>
-    <footer>
-        <p>© 2026 SleepCare. Todos los derechos reservados.</p>
-        <div class="link-group">
-            <a href="#">Contacto</a>
-            <a href="/acerca_de">Sobre nosotros</a>
-            <a href="/politica_de_privacidad">Política de privacidad</a>
-        </div>
-    </footer>
     <script src="js/main.js"></script>
 </body>
 
