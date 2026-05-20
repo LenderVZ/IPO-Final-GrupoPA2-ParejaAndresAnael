@@ -46,14 +46,16 @@ footer {
 }
 
 nav a {
-    background-color: var(--md-sys-color-surface);
-    border-style: solid;
+    background-color: var(--md-sys-color-primary-container);
+    /*border-style: solid;
     border-color: var(--md-sys-color-inverse-primary);
     border-width: 0.2rem;
-    border-radius: var(--btn-border-radius);
-    color: var(--md-sys-color-on-surface);
+    border-radius: var(--btn-border-radius);*/
+    border-radius: 100%;
+    color: var(--md-sys-color-on-primary-container);
     text-decoration-line: none;
-    padding: 0.75rem;
+    display: flex;
+    padding: 1rem;
     margin: 0.25rem;
 }
 
@@ -105,12 +107,18 @@ nav a {
 }
 
 .logo-container {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+}
+
+.logo {
     content: url(../img/logo_alt_2.svg);
     max-height: 50px;
 }
 
 @media (prefers-color-scheme: dark) {
-    .logo-container {
+    .logo {
         content: url(../img/logo.svg);
     }
 }
@@ -132,8 +140,8 @@ a.action-btn {
     margin: 0;
 }
 
-.content section {
-    padding: 0.5rem;
+.content section .card, .content section .section {
+    margin: 0.5rem;
 }
 
 .numeric-unit-value span {
@@ -205,17 +213,51 @@ nav a:active {
 .menu-list {
     display: flex;
     flex-flow: column;
+    width: 100%;
 }
 
 .menu-list a {
+    color: var(--md-sys-color-on-surface);
     text-decoration: none;
     padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .menu-list a:hover {
     background-color: var(--md-sys-color-surface-container);
 }
 
+.menu-list a:active {
+    filter: brightness(150%);
+}
+
 .hidden {
     visibility: hidden;
+}
+
+.navigation-title, .navigation-actions {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigation-title span, .navigation-actions span {
+    padding: 1rem;
+    color: var(--md-sys-color-on-surface);
+    border-radius: 100%;
+}
+
+.navigation-title h3 {
+    margin: 0;
+}
+
+.navigation-title span:hover, .navigation-actions span:hover {
+    background-color: var(--md-sys-color-surface-variant);
+}
+
+.navigation-title span:active, .navigation-actions span:active {
+    background-color: var(--md-sys-color-surface);
 }
