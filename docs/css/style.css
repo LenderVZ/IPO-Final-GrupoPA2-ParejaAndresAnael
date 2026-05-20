@@ -32,6 +32,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
     /* padding: 0.5rem */
 }
 
@@ -117,6 +119,17 @@ nav a {
     max-height: 50px;
 }
 
+.profile {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0,5rem;
+}
+
 .section-sub {
     color: var(--md-sys-color-on-surface-variant);
     font-size: small;
@@ -136,6 +149,27 @@ a.action-btn {
 
 .content section .card, .content section .section {
     margin: 0.5rem;
+}
+
+.profile h2, .profile p {
+    margin: 0;
+}
+
+.profile img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: var(--md-sys-color-primary-container);
+    height: 7rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
+.profile::after {
+    margin-top: 1.3rem;
+    background-color: var(--md-sys-color-outline-variant);
+    height: 0.1rem;
+    width: 100%;
+    content: "";
 }
 
 .numeric-unit-value span {
